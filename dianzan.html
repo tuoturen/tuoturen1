@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>点赞函数</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body style="height:100%;display:flex;justify-content:center;align-items:center;">
+    <button id="dzs" onclick="dianZan() " style="width:300px;height:300px;font-size:200px;background-color:#099;color:#900">0</button>
+    <script>
+      function dianZan(){
+        let dianZanSuBiaoQian = window.document.getElementById('dzs');
+        let dianZanShu = parseInt(dianZanSuBiaoQian.innerText);
+        let xinShuZi = dianZanShu +1;
+        dianZanSuBiaoQian.innerText = xinShuZi;
+      }
+    </script>
+  </body>
+</html>
