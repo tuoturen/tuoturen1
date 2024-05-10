@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
+    <title>显示时间</title>
     <style>  
       body {
         margin: 0;
@@ -21,11 +21,11 @@
 
 <script>
   function displayDate(){
-    document.getElementById("demo")
+    document.getElementById("demo").innerHTML=Date();
   }
 </script>
-<h1>我的第一个 javascrept 程序</h1>
- <p id="demo">这是一个段落</p>
+<h1>显示时间小程序</h1>
+ <p id="demo">时间会在这显示</p>
 
 <button type="button" onclick="displayDate()">显示日期</button>
 
